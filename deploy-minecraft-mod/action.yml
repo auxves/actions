@@ -9,7 +9,7 @@ inputs:
   java-version:
     description: "Java version"
     required: false
-    default: 16
+    default: 17
   gradle-version:
     description: "Gradle version"
     required: false
@@ -20,6 +20,7 @@ runs:
 
   steps:
     - name: Setup Environment
+      shell: bash
       run: |
         echo "VERSION=${GITHUB_REF//refs\/tags\/v}" >> $GITHUB_ENV
 
