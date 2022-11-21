@@ -1,3 +1,7 @@
+# Deploy Minecraft Mod
+
+Builds your Minecraft mod and uploads the resulting jar to your GitHub release.
+
 ## Usage
 
 ```yml
@@ -16,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy
-        uses: glossnyx/deploy-minecraft-mod-action@main
+        uses: auxves/actions/deploy-minecraft-mod@main
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
